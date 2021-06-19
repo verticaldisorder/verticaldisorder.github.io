@@ -203,7 +203,8 @@
     email character varying(100) NOT NULL,
     phone character varying(12) NOT NULL,
     holder_contacts character varying(150) NOT NULL,
-    country_id integer
+    country_id integer,
+    CONSTRAINT fk_country FOREIGN KEY(country_id) REFERENCES country(id)
 );
 </code></pre>
 <h2 id="commands">Commands</h2>
