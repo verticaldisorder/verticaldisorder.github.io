@@ -1,4 +1,4 @@
-# District - район
+# Mountain - гора
 
 ## Table
 
@@ -6,27 +6,28 @@
 |:--------------- |:--------------|:----------|:-------------|
 | `id`    | `integer`     | `YES`     | `YES`        |
 | `name`    | `varchar(40)`     | `NO`     | `NO`        |
-| `country_id`    | `integer`     | `NO`     | `NO`        |
+| `height`    | `integer`     | `NO`     | `NO`        |
+| `district_id`    | `integer`     | `NO`     | `NO`        |
 
 ## Constraints
 
 **Primary key** : `id integer PRIMARY KEY`
 
-**Foreign key** : `country_id integer REFERENCES dcountry(id)`
+**Foreign key** : `district_id integer REFERENCES district(id)`
 
 ## Create table
 
 ```
-CREATE TABLE public.district (
+CREATE TABLE public.mountain (
     id integer NOT NULL,
     name character varying(40) NOT NULL,
-    country_id integer,
-    CONSTRAINT fk_country FOREIGN KEY(country_id) REFERENCES country(id)
+    height integer NOT NULL,
+    district_id integer
 );
 ```
 
 ## Commands
 
 ```
-INSERT INTO district VALUES (1, Frunzenskiy, 1), (2, LA, 2), (3, Vinnitsa, 3);
+INSERT INTO finished_ascending VALUES (1, Ural, 100, 1), (2, Rashmor, 200, 2), (3, Holmik, 10000, 3);
 ```

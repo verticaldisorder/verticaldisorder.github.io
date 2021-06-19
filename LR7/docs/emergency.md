@@ -22,9 +22,7 @@ CREATE TABLE public.emergency (
     id integer NOT NULL,
     ascending_id integer,
     alpinist_id integer,
-    explanaition character varying(255) NOT NULL,
-    CONSTRAINT fk_ascending FOREIGN KEY(ascending_id) REFERENCES ascending(id),
-    CONSTRAINT fk_alpinist FOREIGN KEY(alpinist_id) REFERENCES alpinist(id)
+    explanaition character varying(255) NOT NULL
 );
 ```
 

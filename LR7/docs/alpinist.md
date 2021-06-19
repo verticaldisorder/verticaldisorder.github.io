@@ -28,8 +28,7 @@ CREATE TABLE public.alpinist (
     age integer NOT NULL,
     experience integer NOT NULL,
     address character varying(150) NOT NULL,
-    club_id integer,
-    CONSTRAINT fk_club FOREIGN KEY(club_id) REFERENCES club(id)
+    club_id integer
 );
 ```
 

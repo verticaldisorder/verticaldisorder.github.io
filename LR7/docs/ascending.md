@@ -22,8 +22,7 @@ CREATE TABLE public.ascending (
     id integer NOT NULL,
     start timestamp without time zone NOT NULL,
     ending timestamp without time zone NOT NULL,
-    grouping_id integer,
-    CONSTRAINT fk_grouping FOREIGN KEY(grouping_id) REFERENCES grouping(id)
+    grouping_id integer
 );
 ```
 

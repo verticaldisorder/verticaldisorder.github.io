@@ -1,4 +1,4 @@
-# District - район
+# Grouping Ascending - группа альпинистов
 
 ## Table
 
@@ -6,27 +6,24 @@
 |:--------------- |:--------------|:----------|:-------------|
 | `id`    | `integer`     | `YES`     | `YES`        |
 | `name`    | `varchar(40)`     | `NO`     | `NO`        |
-| `country_id`    | `integer`     | `NO`     | `NO`        |
+| `created_at`    | `date`     | `NO`     | `NO`        |
 
 ## Constraints
 
 **Primary key** : `id integer PRIMARY KEY`
 
-**Foreign key** : `country_id integer REFERENCES dcountry(id)`
-
 ## Create table
 
 ```
-CREATE TABLE public.district (
+CREATE TABLE public."grouping" (
     id integer NOT NULL,
     name character varying(40) NOT NULL,
-    country_id integer,
-    CONSTRAINT fk_country FOREIGN KEY(country_id) REFERENCES country(id)
+    created_at date NOT NULL
 );
 ```
 
 ## Commands
 
 ```
-INSERT INTO district VALUES (1, Frunzenskiy, 1), (2, LA, 2), (3, Vinnitsa, 3);
+INSERT INTO finished_ascending VALUES (1, Group 1, 2021-05-27), (2, Group 2, 2021-05-27), (3, Group 3, 2021-05-27);
 ```

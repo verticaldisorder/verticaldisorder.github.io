@@ -20,9 +20,7 @@
 CREATE TABLE public.ascending_route (
     id integer NOT NULL,
     waypoint_id integer,
-    ascending_id integer,
-    CONSTRAINT fk_waypoint FOREIGN KEY(waypoint_id) REFERENCES waypoint(id),
-    CONSTRAINT fk_ascending FOREIGN KEY(ascending_id) REFERENCES ascending(id)
+    ascending_id integer
 );
 ```
 

@@ -20,8 +20,7 @@
 CREATE TABLE public.finished_ascending (
     id integer NOT NULL,
     ascending_id integer,
-    status character varying(255) NOT NULL,
-    CONSTRAINT fk_ascending FOREIGN KEY(ascending_id) REFERENCES ascending(id)
+    status character varying(255) NOT NULL
 );
 ```
 

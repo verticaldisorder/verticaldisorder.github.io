@@ -20,8 +20,7 @@
 CREATE TABLE public.district (
     id integer NOT NULL,
     name character varying(40) NOT NULL,
-    country_id integer,
-    CONSTRAINT fk_country FOREIGN KEY(country_id) REFERENCES country(id)
+    country_id integer
 );
 ```
 

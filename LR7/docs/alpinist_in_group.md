@@ -20,9 +20,7 @@
 CREATE TABLE public.alpinist_in_group (
     id integer NOT NULL,
     alpinist_id integer,
-    grouping_id integer,
-    CONSTRAINT fk_alpinist FOREIGN KEY(alpinist_id) REFERENCES alpinist(id),
-    CONSTRAINT fk_grouping FOREIGN KEY(grouping_id) REFERENCES grouping(id)
+    grouping_id integer
 );
 ```
 

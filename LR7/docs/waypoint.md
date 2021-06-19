@@ -22,8 +22,7 @@ CREATE TABLE public.waypoint (
     id integer NOT NULL,
     name character varying(40) NOT NULL,
     description character varying(255) NOT NULL,
-    mountain_id integer,
-    CONSTRAINT fk_mountain FOREIGN KEY(mountain_id) REFERENCES mountain(id)
+    mountain_id integer
 );
 ```
 

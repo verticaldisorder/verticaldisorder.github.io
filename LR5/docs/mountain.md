@@ -22,7 +22,8 @@ CREATE TABLE public.mountain (
     id integer NOT NULL,
     name character varying(40) NOT NULL,
     height integer NOT NULL,
-    district_id integer
+    district_id integer,
+    CONSTRAINT fk_district FOREIGN KEY(district_id) REFERENCES district(id)
 );
 ```
 
