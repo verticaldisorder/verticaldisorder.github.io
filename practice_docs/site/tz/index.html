@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://example.com/tz/">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>ТЗ - Учебная практика</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">Учебная практика</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem active">
+                                <a href="./" class="nav-link">ТЗ</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../endpoints/" class="nav-link">Endpoints</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" class="nav-link disabled">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../endpoints/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link">Общее описание проекта</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#_2" class="nav-link">Инфологическая модель данных и описание таблиц</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#_3" class="nav-link">Модель данных:</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_4" class="nav-link">Описание таблиц</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#_5" class="nav-link">Код создания модели данных</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="_1">Общее описание проекта</h1>
+<p>Создать программную систему, предназначенную для администратора альпинистского клуба. Альпинистский клуб организует восхождения в разных точках мира. Система должна обеспечить сохранение информации о хронике восхождений.
+Для каждого восхождения формируется группа. В состав группы могут входить альпинисты из других клубов. Поэтому нужно иметь информацию о каждом клубе (название, страна, город, контактное лицо, e-mail, телефон). Необходимо иметь описание маршрута и продолжительность восхождения. Необходимо обеспечить сохранение даты/времени начала и завершения каж-дого восхождения (планируемого и фактического), имен и адресов участво-вавших в нем альпинистов, названия и высоты горы, страны и района, где эта гора расположена. После завершения восхождения фиксируется информация об успешности восхождения для каждого участника и группы в целом. При возникновении нештатных ситуаций необходимо указать для каждого участ-ника, что случилось (травма, пропал без вести, летальный исход и т.д.) и в пояснении о группе дать подробности.
+Администратор должен иметь возможность:
+– добавления сведений о новом альпинисте, новой вершине;
+– изменении сведений об альпинистах и вершинах;
+– формирования новых групп и внесения всей информации после завер-шения восхождения группой.</p>
+<h1 id="_2">Инфологическая модель данных и описание таблиц</h1>
+<h2 id="_3">Модель данных:</h2>
+<p><img alt="model" src="../1.png" /></p>
+<h2 id="_4">Описание таблиц</h2>
+<p><img alt="table" src="../2.png" /></p>
+<p><img alt="table" src="../3.png" /></p>
+<p><img alt="table" src="../4.png" /></p>
+<p><img alt="table" src="../5.png" /></p>
+<p><img alt="table" src="../6.png" /></p>
+<p><img alt="table" src="../7.png" /></p>
+<p><img alt="table" src="../8.png" /></p>
+<p><img alt="table" src="../9.png" /></p>
+<p><img alt="table" src="../10.png" /></p>
+<p><img alt="table" src="../11.png" /></p>
+<p><img alt="table" src="../12.png" /></p>
+<h1 id="_5">Код создания модели данных</h1>
+<pre><code>from datetime import datetime
+
+import django
+from django.db import models
+
+
+class Club(models.Model):
+    club_id = models.AutoField(primary_key=True, unique=True)
+    club_name = models.CharField(max_length=75, verbose_name=&quot;Название&quot;, unique=True)
+    club_city = models.CharField(max_length=100, verbose_name=&quot;Город&quot;)
+    club_mail = models.EmailField(max_length=75, verbose_name=&quot;Почта&quot;)
+    club_phone = models.CharField(max_length=12, verbose_name=&quot;Телефон&quot;)
+    country = models.CharField(max_length=75, verbose_name=&quot;Страна&quot;)
+    club_contact_person = models.CharField(max_length=75, verbose_name=&quot;Контакт&quot;)
+
+    def __str__(self):
+        return self.club_name
+
+
+class Climber(models.Model):
+    climber_id = models.AutoField(primary_key=True, unique=True)
+    climber_name = models.CharField(max_length=75, verbose_name=&quot;Имя&quot;)
+    climber_surname = models.CharField(max_length=100, verbose_name=&quot;Фамилия&quot;)
+    climber_age = models.IntegerField(verbose_name=&quot;Возраст&quot;)
+    climber_xp = models.IntegerField(verbose_name=&quot;Опыт&quot;)
+    club_id = models.ForeignKey(Club, on_delete=models.CASCADE, verbose_name=&quot;Клуб&quot;)
+    climber_address = models.CharField(max_length=100, verbose_name=&quot;Адрес&quot;)
+
+    def __str__(self):
+        return self.climber_name + &quot; &quot; + self.climber_surname
+
+
+class Group(models.Model):
+    group_id = models.AutoField(primary_key=True, unique=True)
+    group_name = models.CharField(max_length=75, verbose_name=&quot;Название&quot;)
+    group_creation_date = models.DateField(max_length=100, verbose_name=&quot;Дата создания&quot;, default=django.utils.timezone.now)
+    climber = models.ManyToManyField(Climber, verbose_name=&quot;Участники&quot;, related_name=&quot;climbers&quot;)
+    emergency = models.ManyToManyField(&quot;EmergencySituation&quot;, verbose_name=&quot;Нештатные ситуации&quot;, null=True)
+
+    def __str__(self):
+        return self.group_name
+
+
+class Climbing(models.Model):
+
+    STATUS = ((&quot;Планируется&quot;, &quot;Планируется&quot;),
+              (&quot;Выполняется&quot;, &quot;Выполняется&quot;),
+              (&quot;Завершен&quot;, &quot;Завершен&quot;))
+
+    climbing_id = models.AutoField(primary_key=True, unique=True)
+    climbing_start = models.DateField(verbose_name=&quot;Старт&quot;)
+    climbing_finish = models.DateField(verbose_name=&quot;Финиш&quot;)
+    group_id = models.ForeignKey(Group, verbose_name=&quot;Группа&quot;, on_delete=models.CASCADE)
+    waypoint = models.ForeignKey(&quot;Waypoint&quot;, verbose_name=&quot;Вершина&quot;, on_delete=models.CASCADE)
+    status = models.CharField(max_length=20, verbose_name='Статус', choices=STATUS, default=&quot;Планируется&quot;)
+
+
+class Mountain(models.Model):
+    mountain_id = models.AutoField(primary_key=True, unique=True)
+    mountain_name = models.CharField(max_length=75, verbose_name=&quot;Название горы&quot;)
+    mountain_high = models.DecimalField(max_digits=12, verbose_name=&quot;Высота горы&quot;, decimal_places=2)
+    country = models.CharField(max_length=75, verbose_name=&quot;Срана&quot;)
+
+    def __str__(self):
+        return self.mountain_name
+
+
+class Waypoint(models.Model):
+    waypoint_id = models.AutoField(primary_key=True, unique=True)
+    waypoint_name = models.CharField(max_length=75, verbose_name=&quot;Название вершины&quot;)
+    waypoint_desc = models.CharField(max_length=200, verbose_name=&quot;Описание&quot;)
+    mountain = models.ForeignKey(Mountain, on_delete=models.CASCADE, verbose_name=&quot;Гора&quot;)
+
+    def __str__(self):
+        return self.waypoint_name
+
+
+class EmergencySituation(models.Model):
+    emergency_id = models.AutoField(primary_key=True, unique=True)
+    desc = models.TextField(verbose_name=&quot;Описание&quot;)
+    climber = models.ForeignKey(Climber, on_delete=models.CASCADE, verbose_name=&quot;Альпинист&quot;)
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
