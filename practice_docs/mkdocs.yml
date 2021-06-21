@@ -1,0 +1,6 @@
+site_name: Учебная практика
+site_url: https://example.com
+
+nav:
+ - ТЗ: tz.md
+ - Endpoints: endpoints.md
